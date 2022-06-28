@@ -24,6 +24,26 @@ export class CanvasView {
     }
 
     initStartButton(startFunction: (view: CanvasView) => void): void {
-        this.start?.addEventListener('click', () = startFunction(this))
+        this.start?.addEventListener('click', () = startFunction(this));
+    }
+
+    drawScore(score: number): void{
+        if(this.scoreDisplay) this.scoreDisplay.innerHTML = score.toString();
+    }
+
+    drawInfo(text: string): void {
+        if(this.info)  this.info.innerHTML = text;
+    }
+
+    drawSprite(brick: Brick | Paddle | Ball): void {
+        if(!brick) return;
+
+        this.context?.drawImage(
+            brick.image,
+            brick.pos.x,
+            brick.pos.y,
+            brick.width,
+            brick.height
+        );
     }
 }
