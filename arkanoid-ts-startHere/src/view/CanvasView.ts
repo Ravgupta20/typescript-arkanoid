@@ -2,6 +2,7 @@
 import { Brick } from "~/sprites/Brick";
 import { Paddle } from "~/sprites/Paddle";
 import { Ball } from "~/sprites/Ball";
+import { BRICK_IMAGES } from "~/setup";
 
 
 export class CanvasView {
@@ -45,5 +46,9 @@ export class CanvasView {
             brick.width,
             brick.height
         );
+    }
+
+    drawBricks(bricks: Brick[]): void {
+        bricks.forEach(brick => this.drawSprite(brick));
     }
 }
