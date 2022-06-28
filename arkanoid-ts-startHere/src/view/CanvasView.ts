@@ -22,4 +22,8 @@ export class CanvasView {
     clear(): void {
         this.context?.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
+
+    initStartButton(startFunction: (view: CanvasView) => void): void {
+        this.start?.addEventListener('click', () = startFunction(this))
+    }
 }
