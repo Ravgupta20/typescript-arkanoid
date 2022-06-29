@@ -7,3 +7,14 @@ import { Paddle } from "./sprites/Paddle";
 import PADDLE_IMAGE from './images/paddle.png';
 import BALL_IMAGE from './images/ball.png';
 
+//Level and colors
+import {
+    PADDLE_SPEED,
+    PADDLE_WIDTH,
+    PADDLE_HEIGHT,
+    PADDLE_STARTX,
+    BALL_SPEED,
+    BALL_SIZE,
+    BALL_STARTX,
+    BALL_STARTY
+} from './setup';
