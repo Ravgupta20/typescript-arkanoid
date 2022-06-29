@@ -18,3 +18,16 @@ import {
     BALL_STARTX,
     BALL_STARTY
 } from './setup';
+
+let gameOver = false;
+let score = 0;
+
+function setGameOver(view: CanvasView) {
+    view.drawInfo("Game Over!");
+    gameOver = false;
+}
+
+function setGameWin(view CanvasView) {
+    view.drawInfo("Game Won!");
+    gameOver = false;
+}
