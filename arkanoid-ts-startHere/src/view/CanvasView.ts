@@ -6,7 +6,7 @@ import { BRICK_IMAGES } from "~/setup";
 
 
 export class CanvasView {
-    private canvas: HTMLCanvasElement;
+    canvas: HTMLCanvasElement;
     private context: CanvasRenderingContext2D | null;
     private scoreDisplay: HTMLObjectElement | null;
     private start: HTMLObjectElement | null;
