@@ -16,4 +16,25 @@ export class Brick {
         this.brickEnergy = brickEnergy;
         this.brickImage.src = image;
     }
+
+    //Getters
+    get width(): number{
+        return this.brickWidth;
+    }
+
+    get height(): number {
+        return this.brickHeight;
+    }
+
+    get pos(): Vector {
+        return this.position;
+    }
+
+    get image(): HTMLImageElement {
+        return this.brickImage;
+    }
+
+    get energy(): number {
+        return this.brickEnergy;
+    }
 }
